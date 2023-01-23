@@ -1,0 +1,9 @@
+/_build/
+/deps/
+/.elixir_ls/
+
+*.ez
+*.lock
+user_service-*.tar
+
+/.env
