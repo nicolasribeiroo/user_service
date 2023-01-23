@@ -21,4 +21,6 @@ defmodule UserService do
     UserService.Endpoint.config_change(changed, removed)
     :ok
   end
+
+  defdelegate create_user(params), to: UserService.User.Create, as: :call
 end

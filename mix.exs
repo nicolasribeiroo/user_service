@@ -31,7 +31,8 @@ defmodule UserService.MixProject do
       {:ecto_sql, "~> 3.2"},
       {:postgrex, "~> 0.15"},
       {:dotenv, "~> 3.0.0"},
-      {:pbkdf2_elixir, "~> 2.0"}
+      {:pbkdf2_elixir, "~> 2.0"},
+      {:poison, "~> 5.0"}
     ]
   end
 end

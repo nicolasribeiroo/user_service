@@ -8,6 +8,6 @@ defmodule UserService.Router do
   scope "/api", UserService do
     pipe_through :api
 
-    get "/hello-world", HelloWorldController, :execute
+    resources "/users", UsersController, only: [:create, :show, :delete, :update]
   end
 end

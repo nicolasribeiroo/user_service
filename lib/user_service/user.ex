@@ -13,6 +13,12 @@ defmodule UserService.User do
 
   @required_params [:name, :password]
 
+  def build(params) do
+    params
+    |> changeset()
+    |> apply_action(:insert)
+  end
+
   def changeset(params) do
     %__MODULE__{}
     |> cast(params, @required_params)
